@@ -37,7 +37,7 @@ Insights:
 </div>
 <br>
 
-{{ page.tags[0] }}
+{{ page.tags }}
 
 <div class="posts">
   {% for post in paginator.posts %}
