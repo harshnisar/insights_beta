@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-tag: gender
+tags: gender
 ---
 
 <b>Insights</b> is an intiative by <a href='http://research.aspiringminds.com'>Aspiring Minds Research</a> to give 52 rich insights into the Indian labour market, one week at a time. 
@@ -36,10 +36,13 @@ Insights:
 </ol>
 </div>
 <br>
+
+{{ page.tags[0] }}
+
 <div class="posts">
   {% for post in paginator.posts %}
-    {% for tag in post.tags %}
-      {% if page.tag == tag %}
+    
+  {% if post.tags contains page.tags[0] %}
         <div class="post">
           <h1 class="post-title">
             <a name="{{ post.title }}"></a>
@@ -52,7 +55,7 @@ Insights:
 
           {{ post.content }}
         </div>
-  {% endif %}
+  
   {% endif %}
   {% endfor %}
 </div>
