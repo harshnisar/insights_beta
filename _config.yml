@@ -9,7 +9,7 @@ permalink:        pretty
 title:            Aspiring Minds Insights
 tagline:          '52 insights into the Indian labour market, served one week at a time'
 description:      'Insights is a set of 52 insights into the Indian labour market powered by research at <a href="http://research.aspiringminds.com">Aspiring Minds</a>, continuing its aim of bringing meritocracy using data science'
-url:              http://harshnisar.github.io/insights
+url:              http://harshnisar.github.io/insights_beta
 
 extra:
   name:           'insights'
