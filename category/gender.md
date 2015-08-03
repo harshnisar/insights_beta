@@ -19,7 +19,7 @@ Insights:
 <br>
 <div id="textarea" style="display: none">
 <ol>
-{% for post in paginator.posts %}
+{% for post in site.posts %}
 <li>
 <a href="#{{ post.title }}"> {{ post.title }}  </a>
 {% for tag in post.tags %}
@@ -38,7 +38,7 @@ Insights:
 {{ page.tags }}
 
 <div class="posts">
-  {% for post in paginator.posts %}
+  {% for post in site.posts %}
   <b>posts</b>
   {% if post.tags contains page.tags %}
         <b>the one I want</b>
