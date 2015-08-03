@@ -20,7 +20,6 @@ Insights:
 <div id="textarea" style="display: none">
 <ol>
 {% for post in paginator.posts %}
-{% if 'gender' in post.tags %}
 <li>
 <a href="#{{ post.title }}"> {{ post.title }}  </a>
 {% for tag in post.tags %}
@@ -30,7 +29,6 @@ Insights:
 <br>
 </li>
 
-{% endif %}
 {% endfor %}
 
 </ol>
