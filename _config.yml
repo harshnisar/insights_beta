@@ -26,7 +26,7 @@ paginate:         52
 version:          1.0.0
 
 github:
-  repo:           https://github.com/harshnisar/insights
+  repo:           https://github.com/harshnisar/insights_beta
   
 prose:
   rooturl: '_posts'
