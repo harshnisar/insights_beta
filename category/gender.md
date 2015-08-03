@@ -35,7 +35,6 @@ Insights:
 
 <div class="posts">
   {% for post in site.posts %}
-  <b>posts</b>
   {% if post.tags contains page.tags %}
         <b>the one I want</b>
         <div class="post">
