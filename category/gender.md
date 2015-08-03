@@ -42,7 +42,7 @@ Insights:
 <div class="posts">
   {% for post in paginator.posts %}
     
-  {% if post.tags contains page.tags[0] %}
+  {% if post.tags contains page.tags %}
         <div class="post">
           <h1 class="post-title">
             <a name="{{ post.title }}"></a>
