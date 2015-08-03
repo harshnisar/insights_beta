@@ -17,4 +17,3 @@ category:
 <img src= "{{ site.url }}/public/images/1234.png" height=400 width=700></img>
 
 Something important about this plot
-
