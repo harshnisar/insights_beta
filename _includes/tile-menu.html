@@ -7,7 +7,7 @@
   
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy"></div>
-        <a href="#" onclick="catindex(this)" id="{{ tag|first }}" class="thumbnail purple"> {{ tag | first }}  </a>
+        <a href="{{site.url}}categories/{{tag|first}} " onclick="catindex(this)" id="{{ tag|first }}" class="thumbnail purple"> {{ tag | first }}  </a>
       </div>
     
     {% endfor %}
