@@ -2,12 +2,12 @@
 <div class="container">
     <div class="row">
   
-    {% for category in site.categories %}  
+    {% for tag in site.tags %}  
   
   
       <div class="col-md-3 col-sm-4 col-xs-6">
         <div class="dummy"></div>
-        <a href="#" onclick="catindex(this)" id="{{ category|first }}" class="thumbnail purple"> {{ category | first }}  </a>
+        <a href="#" onclick="catindex(this)" id="{{ category|first }}" class="thumbnail purple"> {{ tag | first }}  </a>
       </div>
     
     {% endfor %}
