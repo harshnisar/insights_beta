@@ -20,17 +20,13 @@ Insights:
 <div id="textarea" style="display: none">
 <ol>
 {% for post in site.posts %}
+{% if post.tags contains page.tags %}
 <li>
 <a href="#{{ post.title }}"> {{ post.title }}  </a>
-{% for tag in post.tags %}
-#{{ tag }}, 
-{% endfor %}
-
 <br>
 </li>
-
+{% endif %}
 {% endfor %}
-
 </ol>
 </div>
 <br>
@@ -59,20 +55,4 @@ Insights:
   {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
 
