@@ -5,7 +5,7 @@
     {% for tag in site.tags %}  
   
   
-      <div class="col-md-3 col-sm-4 col-xs-6">
+      <div class="col-md-4 col-sm-4 col-xs-6">
         <div class="dummy"></div>
         <a href="{{site.url}}/category/{{tag|first}} " onclick="catindex(this)" id="{{ tag|first }}" class="thumbnail purple"> {{ tag | first }}  </a>
       </div>
