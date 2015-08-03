@@ -5,6 +5,8 @@ published: true
 tags:
   - meritocracy
   - tier-of-college
+category:
+ - Migrations
 ---
 
 The trapzoid of meriocracy.
