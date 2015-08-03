@@ -31,12 +31,11 @@ Insights:
 </div>
 <br>
 
-{{ page.tags }}
 
 <div class="posts">
   {% for post in site.posts %}
   {% if post.tags contains page.tags %}
-        <b>the one I want</b>
+        
         <div class="post">
           <h1 class="post-title">
             <a name="{{ post.title }}"></a>
