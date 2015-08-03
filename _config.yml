@@ -1,0 +1,34 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Aspiring Minds Insights
+tagline:          '52 insights into the Indian labour market, served one week at a time'
+description:      'Insights is a set of 52 insights into the Indian labour market powered by research at <a href="http://research.aspiringminds.com">Aspiring Minds</a>, continuing its aim of bringing meritocracy using data science'
+url:              http://harshnisar.github.io/insights
+
+extra:
+  name:           'insights'
+
+author:
+  name:           'AMResearch'
+  url:            https://twitter.com/rnd_at_am
+
+owner:
+  disqus-shortname: aminsights
+paginate:         52
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/harshnisar/insights
+  
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://harshnisar.github.io/insights/'
+  media: 'public/images'

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.html %}
+
+  
+  <body class="layout-reverse">
+    
+    {% include sidebar.html %}
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+          
+        <div class="container" style="overflow:hidden">
+          <h3 class="masthead-title">
+          
+          
+            <a href="{{ site.url }}" title="Home" style="display:inline" ><img align="left" style="display:inline; margin-right:10px;" height=50 widht=50 src="https://pbs.twimg.com/profile_images/1539659203/bulbsmall_400x400.PNG"></img> {{ site.title }}</a>
+            <br><small><b>{{ site.tagline }}</b></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        {{ content }}
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  </body>
+
+  <script>
+  function toggleSeeMore() {
+    if(document.getElementById("textarea").style.display == 'none') {
+        document.getElementById("textarea").style.display = 'block';
+        document.getElementById("seeMore").innerHTML = '(Hide)';
+    }
+    else {
+        document.getElementById("textarea").style.display = 'none';
+        document.getElementById("seeMore").innerHTML = '(Show table of contents)';        
+    }
+  }  
+  </script>
+
+ 
+  
+</html>
