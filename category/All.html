@@ -20,13 +20,12 @@ All Insights:
 <div id="textarea" style="display: none">
 <ol>
 {% for post in site.posts %}
-<!-- {% if post.tags contains page.tags %}
- -->
+
  <li>
 <a href="#{{ post.title }}"> {{ post.title }}  </a>
 <br>
 </li>
-<!-- {% endif %} -->
+
 {% endfor %}
 </ol>
 </div>
@@ -35,7 +34,7 @@ All Insights:
 
 <div class="posts">
   {% for post in site.posts %}
-  <!-- {% if post.tags contains page.tags %} -->
+
         
         <div class="post">
           <h1 class="post-title">
@@ -50,8 +49,8 @@ All Insights:
           {{ post.content }}
         </div>
   
-<!--   {% endif %}
- -->  
+
+
  {% endfor %}
 </div>
 
