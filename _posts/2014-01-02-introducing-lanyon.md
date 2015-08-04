@@ -3,8 +3,7 @@ layout: post
 title: Trapezoid of Meritocracy
 published: true
 tags:
-  - meritocracy
-  - tier-of-college
+  - Labour Market
 category:
  - Migrations
  - gender

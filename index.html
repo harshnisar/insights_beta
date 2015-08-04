@@ -13,7 +13,10 @@ Read more about the project <a href=""> here</a>
 {% include tile-menu.html %}
 
 <br>
-<div class="posts">
+
+<!-- Do you want to have all the posts on the home page? -->
+
+<!-- <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
@@ -28,7 +31,7 @@ Read more about the project <a href=""> here</a>
     {{ post.content }}
   </div>
   {% endfor %}
-</div>
+</div> -->
 
 <div class="pagination">
   {% if paginator.next_page %}
